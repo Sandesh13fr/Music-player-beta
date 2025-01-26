@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diss | Music player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="player">
+            <nav>
+                <div class="circ"><i class="fa-solid fa-arrow-left"></i></div>
+                <div class="circ"><i class="fa-solid fa-bars"></i></div>
+            </nav>
+            <div class="songInfo">
+                <img src="./assets/little-bit-better.jpg" alt="">
+                <h1 id="song-title">Little Bit Better</h1>
+                <p id="artist">Caleb Hearn & ROSIE</p>
+        </div>
+        <audio controls id="music">
+            <source src="./assets/song1.mp3" type="audio/mp3">
+        </audio>
+        <div class="progress-container">
+            <input type="range" name="progress" id="progress" value="0">
+        </div>
+        <div class="controls">
+            <div class="circ"><i class="fa-solid fa-backward"></i></div>
+            <div class="circ" onclick="playPause()"><i class="fa-solid fa-play" id="ctrl"></i></div>
+            <div class="circ"><i class="fa-solid fa-forward"></i></div>
+        </div>
+    </main>
+</body>
+<script src="https://kit.fontawesome.com/5c74bda953.js" crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+</html>
